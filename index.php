@@ -63,7 +63,8 @@ if (isset($_POST['name'])){
         <p>Enter your details and submit this form to confirm 
            your participation in the trip.</p>
     <?php  
-        if ($insert == true) { echo "<p class='msg'>Thanks for submitting your form. 
+        if ($insert == true) { 
+            echo "<p class='msg'>Thanks for submitting your form. 
             We are happy to see you joining us for Pokhara trip.</p>"; }
         
     ?>
