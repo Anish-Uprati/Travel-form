@@ -63,27 +63,8 @@ if (isset($_POST['name'])){
         <p>Enter your details and submit this form to confirm 
            your participation in the trip.</p>
     <?php  
-        session_start(); 
-        
-        if (isset($_POST['submit'])) {
-            
-            $insert = true;
-        
-            if ($insert == true) {
-                
-                $_SESSION['msg'] = "Thanks for submitting your form. We are happy to see you joining us for Pokhara trip.";
-            }
-        
-            
-            header("Location: ".$_SERVER['PHP_SELF']);
-            exit(); 
-        }
-        
-        
-        if (isset($_SESSION['msg'])) {
-            echo "<p class='msg'>".$_SESSION['msg']."</p>";
-            unset($_SESSION['msg']);
-        }
+        if ($insert == true) { echo "<p class='msg'>Thanks for submitting your form. 
+            We are happy to see you joining us for Pokhara trip.</p>"; }
         
     ?>
         
